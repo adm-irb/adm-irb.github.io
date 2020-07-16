@@ -1,0 +1,339 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS Image Maps</title>
+<style type="text/css">
+
+#container {
+	width: 747px;
+	height: 883px;
+	margin: 0 auto;
+}
+
+ul#continents1, ul#continents2, ul#description {
+	list-style: none;
+	width: 747px;
+	height: 883px;
+	position: relative;
+	background: url(images/map.png) no-repeat 0 0;
+}
+
+ul#continents1 li, ul#continents2 li, ul#description li {
+	position: absolute;
+}
+
+.intellibrick {
+	width: 227px;
+	height: 142px;
+	top: 0px;
+	left: 0px;
+}
+
+.elecboard {
+	width: 108px;
+	height: 100px;
+	top: 301px;
+	left: 36px;
+}
+
+.m2 {
+	width: 108px;
+	height: 100px;
+	top: 201px;
+	left: 236px;
+}
+
+.m1 {
+	width: 108px;
+	height: 100px;
+	top: 251px;
+	left: 376px;
+}
+
+.zoomlens {
+	width: 108px;
+	height: 100px;
+	top: 251px;
+	left: 476px;
+}
+
+.camera {
+	width: 108px;
+	height: 100px;
+	top: 0px;
+	left: 476px;
+}
+
+.fltwheel {
+	width: 108px;
+	height: 100px;
+	top: 401px;
+	left: 476px;
+}
+
+.illumunit {
+	width: 108px;
+	height: 130px;
+	top: 551px;
+	left: 56px;
+}
+
+.glasstube {
+	width: 108px;
+	height: 130px;
+	top: 551px;
+	left: 216px;
+}
+
+.laswheel {
+	width: 108px;
+	height: 130px;
+	top: 621px;
+	left: 0px;
+}
+
+.cyllens {
+	width: 68px;
+	height: 130px;
+	top: 551px;
+	left: 346px;
+}
+
+.samplechamber {
+	width: 150px;
+	height: 150px;
+	top: 551px;
+	left: 456px;
+}
+
+.samplerotation {
+	width: 150px;
+	height: 150px;
+	top: 511px;
+	left: 596px;
+}
+
+ul#continents1 li a, ul#continents2 li a, ul#description li a  {
+	display: block;
+	outline: none;
+	height: 100%;
+}
+
+ul#continents2 li.intellibrick a:hover, ul#description li.intellibrick a:hover {
+	background-position: 0 0px;
+}
+
+ul#continents2 li.elecboard a:hover, ul#description li.elecboard a:hover {
+	background-position: -36px -301px;
+}
+
+ul#continents2 li.m1 a:hover, ul#description li.m1 a:hover {
+	background-position: -236px -201px;
+}
+
+ul#continents2 li.m3 a:hover, ul#description li.m3 a:hover {
+	background-position: -376px -251px;
+}
+
+ul#continents2 li.zoomlens a:hover, ul#description li.zoomlens a:hover {
+	background-position: -476px -251px;
+}
+
+ul#continents2 li.camera a:hover, ul#description li.camera a:hover {
+	background-position: -476px -0px;
+}
+
+ul#continents2 li.fltwheel a:hover, ul#description li.fltwheel a:hover {
+	background-position: -476px -401px;
+}
+
+ul#continents2 li.ilumunit a:hover, ul#description li.ilumunit 
+a:hover {
+	background-position: -56px -551px;
+}
+
+ul#continents2 li.glasstube a:hover, ul#description li.glasstube 
+a:hover {
+	background-position: -216px -551px;
+}
+
+ul#continents2 li.laswheel a:hover, ul#description li.laswheel 
+a:hover {
+	background-position: -96px -621px;
+}
+
+ul#continents2 li.cyllens a:hover, ul#description li.cyllens
+a:hover {
+	background-position: -346px -551px;
+}
+
+ul#continents2 li.samplechamber a:hover, ul#description li.samplechamber 
+a:hover {
+	background-position: -456px -551px;
+}
+
+ul#continents2 li.samplerotation a:hover, ul#description li.samplerotation 
+a:hover {
+	background-position: -596px -511px;
+}
+
+ul#description li a span {
+	display: none;
+}
+
+ul#description li a:hover span {
+	display: block;
+	<img src="illumunit.png" alt="Illum">
+}
+
+ul#description li a:hover span {
+	display: block;
+	padding: 5px;
+	width: 150px;
+	background: #000;
+	position: relative;
+	top: 50%;
+	font: 11px Arial, Helvetica, sans-serif;
+	opacity: .75;
+	filter:alpha(opacity=75);
+	color: #FFF;
+}
+
+</style>
+</head>
+
+<body>
+<div id="container">
+	<ul id="description">
+    <li class="intellibrick">
+        <a>
+            <span>
+                <strong>Intelligent brick</strong> 
+                <p>
+				Orchestrates the coordinated movements to Z-translate the Illumination Unit (motor M2) and the sample chamber (motor M1) as well as the laser / camera triggers.</p>
+        </a>
+    </li>
+    <li class="elecboard">
+   		<a>
+            <span>
+                <strong>Electronic board</strong>
+				<p>
+                The electronic board power and trigger the laser(s) / camera(s) when an image has to be acquired.
+				<p/>
+            </span>
+        </a>
+    </li>
+	<li class="illumunit">
+   		<a>
+            <span>
+                <strong>Illumination Unit</strong>
+				<p>
+                A laser beam is spread by a glass tube and focused into an array of light sheets (AR+CL). The  whole illumination unit is Z-translated (M2) to match the imaging plane.
+				<p/>
+            </span>
+        </a>
+    </li>
+	<li class="glasstube">
+   		<a>
+            <span>
+                <strong>Glass Tube</strong>
+				<p>
+                Part of the Illumination Unit. Used to open the collimated laser beam(s) into a broad cone.
+				<p/>
+            </span>
+        </a>
+    </li>
+	<li class="laswheel">
+   		<a>
+            <span>
+                <strong>Laser Wheel</strong>
+				<p>
+                Used to adjust the lateral position of the moving laser to the position of the fixed laser.
+				<p/>
+            </span>
+        </a>
+    </li>
+	<li class="cyllens">
+   		<a>
+            <span>
+                <strong>Cylindrical lens</strong>
+				<p>
+                The cylindrical lens is part of the Illumination Unit and used to focus the light sheet (LS) at the sample position to a Z-width of approximately 10 microns.
+				<p/>
+            </span>
+        </a>
+    </li>
+	<li class="samplechamber">
+   		<a>
+            <span>
+                <strong>Sample Chamber</strong>
+				<p>
+                The sample is embedded in an agar cylinder held in a quartz chamber. The lightsheet position is adjusted thinnest at sample, optimizing optical sectioning (≈10 µm).
+				<p/>
+            </span>
+        </a>
+    </li>
+	<li class="samplerotation">
+   		<a>
+            <span>
+                <strong>Sample Rotation</strong>
+				<p>
+                The sample is rotated through paired magnets by a motor (M2) and   a mechanism  allowing the Z-translation of the chamber.
+				<p/>
+            </span>
+        </a>
+    </li>	
+	<li class="m2">
+   		<a>
+            <span>
+                <strong>Motor M2</strong>
+				<p>
+                Z-translates the ilumination chamber through a chain of gears.
+				<p/>
+            </span>
+        </a>
+    </li>
+	<li class="m1">
+   		<a>
+            <span>
+                <strong>Motor M1</strong>
+				<p>
+                Z-translates the sample chamber through a chain of gears.
+				<p/>
+            </span>
+        </a>
+    </li>
+	<li class="zoomlens">
+   		<a>
+            <span>
+                <strong>Zoom Lens</strong>
+				<p>
+                Forms an image of the fluoresence emitted in the image plane (light sheet) on the camera.
+				<p/>
+            </span>
+        </a>
+    </li>
+	<li class="camera">
+   		<a>
+            <span>
+                <strong>CMOS Camera</strong>
+				<p>
+                Collect the fluorescent light emitted in the imaging plane (at light sheet).
+				<p/>
+            </span>
+        </a>
+    </li>
+	<li class="fltwheel">
+   		<a>
+            <span>
+                <strong>Filter Wheel</strong>
+				<p>
+                Holds the emission filter used to attenuate light coming from the laser(s).
+				<p/>
+            </span>
+        </a>
+    </li>
+	</ul>
+</div>
+</body>
+</html>
